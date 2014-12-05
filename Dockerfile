@@ -8,3 +8,5 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/
 
+ENTRYPOINT [ "boinc" ]
+CMD [ "--help" ]
