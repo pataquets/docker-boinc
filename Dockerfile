@@ -8,5 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/
 
+WORKDIR /var/lib/boinc-client/
+
 ENTRYPOINT [ "boinc" ]
 CMD [ "--help" ]
