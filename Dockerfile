@@ -10,5 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 
 WORKDIR /var/lib/boinc-client/
 
+EXPOSE 31416
+
 ENTRYPOINT [ "boinc" ]
 CMD [ "--help" ]
