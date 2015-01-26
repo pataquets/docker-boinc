@@ -13,5 +13,5 @@ WORKDIR /var/lib/boinc-client/
 
 EXPOSE 31416
 
-ENTRYPOINT [ "boinc" ]
+ENTRYPOINT [ "boinc", "--allow_remote_gui_rpc" ]
 CMD [ "--help" ]
