@@ -5,6 +5,7 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
     apt-get -y install \
       boinc-client \
+      locales \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/
