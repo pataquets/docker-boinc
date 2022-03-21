@@ -1,11 +1,11 @@
 FROM pataquets/ubuntu:latest
 
+ARG DEBIAN_FRONTEND=noninteractive
 RUN \
   apt-get update && \
-  DEBIAN_FRONTEND=noninteractive \
-    apt-get -y install \
-      boinc-client \
-      locales \
+  apt-get -y install \
+    boinc-client \
+    locales \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/
