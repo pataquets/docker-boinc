@@ -5,7 +5,6 @@ RUN \
   apt-get update && \
   apt-get -y install \
     boinc-client \
-    locales \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/
