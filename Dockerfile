@@ -5,6 +5,7 @@ RUN \
   apt-get update && \
   apt-get -y install \
     boinc-client \
+    tzdata \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/
